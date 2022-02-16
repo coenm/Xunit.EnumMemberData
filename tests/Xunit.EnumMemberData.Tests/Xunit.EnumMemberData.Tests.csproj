@@ -7,7 +7,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Xunit.EnumMemberData\Xunit.EnumMemberData.csproj" />
     <PackageReference Include="Meziantou.Xunit.ParallelTestFramework" />
-    <PackageReference Include="Verify.Xunit" />
     <PackageReference Include="xunit" />
     <PackageReference Include="xunit.analyzers" />
     <PackageReference Include="xunit.categories" />
