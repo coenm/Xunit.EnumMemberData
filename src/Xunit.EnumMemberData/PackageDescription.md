@@ -1,7 +1,5 @@
 # Xunit.EnumMemberData
 
-[![Nuget Status](https://img.shields.io/nuget/v/Xunit.EnumMemberData.svg?label=Xunit.EnumMemberData&style=flat-square)](https://www.nuget.org/packages/Xunit.EnumMemberData/)
-
 Xunit.EnumMemberData is a library containing one attribute (`[EnumMemberData]`) to simplify using enums when writing theories (parameterized unittests) using xunit.
 
 ## By type of enum

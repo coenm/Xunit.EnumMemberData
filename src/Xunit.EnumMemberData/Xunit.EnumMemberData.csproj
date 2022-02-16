@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net5;net6</TargetFrameworks>
+    <RootNamespace>XunitEnumMemberData</RootNamespace>
+    <PackageId>Xunit.EnumMemberData</PackageId>
+    <PackageTags>xunit;enum;memberdata</PackageTags>
+    <Description>Xunit.EnumMemberData makes it easy creating parameterized tests for each enum value.</Description>
+    <PackageReadmeFile>PackageDescription.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition=" $(TargetFramework)=='netstandard2.1' OR $(TargetFramework)=='net5' OR $(TargetFramework)=='net6' ">
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <PackageReference Include="Nullable" PrivateAssets="all" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)\PackageDescription.md" Pack="true" PackagePath="$(PackageReadmeFile)" Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.extensibility.core" Version="2.4.1" />
+  </ItemGroup>
+</Project>
